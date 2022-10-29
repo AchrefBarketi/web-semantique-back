@@ -1,0 +1,477 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://www.semanticweb.org/ilyes/ontologies/2022/8/velo.tn#"
+     xml:base="http://www.semanticweb.org/ilyes/ontologies/2022/8/velo.tn"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#">
+    <owl:Ontology rdf:about="http://www.semanticweb.org/ilyes/ontologies/2022/8/velo.tn"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/ilyes/ontologies/2022/8/velo.tn#Contains -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/ilyes/ontologies/2022/8/velo.tn#Contains">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/ilyes/ontologies/2022/8/velo.tn#Events"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/ilyes/ontologies/2022/8/velo.tn#Tour"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ilyes/ontologies/2022/8/velo.tn#Not_rented -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/ilyes/ontologies/2022/8/velo.tn#Not_rented">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/ilyes/ontologies/2022/8/velo.tn#Bike"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ilyes/ontologies/2022/8/velo.tn#Organised_by -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/ilyes/ontologies/2022/8/velo.tn#Organised_by">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/ilyes/ontologies/2022/8/velo.tn#Events"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/ilyes/ontologies/2022/8/velo.tn#Association"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ilyes/ontologies/2022/8/velo.tn#Rent -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/ilyes/ontologies/2022/8/velo.tn#Rent">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/ilyes/ontologies/2022/8/velo.tn#Association"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/ilyes/ontologies/2022/8/velo.tn#Bike"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ilyes/ontologies/2022/8/velo.tn#use -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/ilyes/ontologies/2022/8/velo.tn#use">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/ilyes/ontologies/2022/8/velo.tn#Tour"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/ilyes/ontologies/2022/8/velo.tn#Bike"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Data properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/ilyes/ontologies/2022/8/velo.tn#Address -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/ilyes/ontologies/2022/8/velo.tn#Address">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/ilyes/ontologies/2022/8/velo.tn#Association"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ilyes/ontologies/2022/8/velo.tn#Code -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/ilyes/ontologies/2022/8/velo.tn#Code">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/ilyes/ontologies/2022/8/velo.tn#Bike"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ilyes/ontologies/2022/8/velo.tn#Date -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/ilyes/ontologies/2022/8/velo.tn#Date">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/ilyes/ontologies/2022/8/velo.tn#Tour"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#dateTime"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ilyes/ontologies/2022/8/velo.tn#Description -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/ilyes/ontologies/2022/8/velo.tn#Description">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/ilyes/ontologies/2022/8/velo.tn#Association"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/ilyes/ontologies/2022/8/velo.tn#Events"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/ilyes/ontologies/2022/8/velo.tn#Tour"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ilyes/ontologies/2022/8/velo.tn#Disponibility -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/ilyes/ontologies/2022/8/velo.tn#Disponibility">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/ilyes/ontologies/2022/8/velo.tn#Bike"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#boolean"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ilyes/ontologies/2022/8/velo.tn#Duration -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/ilyes/ontologies/2022/8/velo.tn#Duration">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/ilyes/ontologies/2022/8/velo.tn#Tour"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2002/07/owl#real"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ilyes/ontologies/2022/8/velo.tn#Email -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/ilyes/ontologies/2022/8/velo.tn#Email">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/ilyes/ontologies/2022/8/velo.tn#Association"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ilyes/ontologies/2022/8/velo.tn#EndDate -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/ilyes/ontologies/2022/8/velo.tn#EndDate">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/ilyes/ontologies/2022/8/velo.tn#Events"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#dateTime"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ilyes/ontologies/2022/8/velo.tn#Location -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/ilyes/ontologies/2022/8/velo.tn#Location">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/ilyes/ontologies/2022/8/velo.tn#Events"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/ilyes/ontologies/2022/8/velo.tn#Tour"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ilyes/ontologies/2022/8/velo.tn#Model -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/ilyes/ontologies/2022/8/velo.tn#Model">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/ilyes/ontologies/2022/8/velo.tn#Bike"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ilyes/ontologies/2022/8/velo.tn#Name -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/ilyes/ontologies/2022/8/velo.tn#Name">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/ilyes/ontologies/2022/8/velo.tn#Association"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ilyes/ontologies/2022/8/velo.tn#Phone -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/ilyes/ontologies/2022/8/velo.tn#Phone">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/ilyes/ontologies/2022/8/velo.tn#Association"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#int"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ilyes/ontologies/2022/8/velo.tn#PriceHour -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/ilyes/ontologies/2022/8/velo.tn#PriceHour">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/ilyes/ontologies/2022/8/velo.tn#Bike"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#int"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ilyes/ontologies/2022/8/velo.tn#StartDate -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/ilyes/ontologies/2022/8/velo.tn#StartDate">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/ilyes/ontologies/2022/8/velo.tn#Events"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#dateTime"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ilyes/ontologies/2022/8/velo.tn#Status -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/ilyes/ontologies/2022/8/velo.tn#Status">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/ilyes/ontologies/2022/8/velo.tn#Bike"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ilyes/ontologies/2022/8/velo.tn#Title -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/ilyes/ontologies/2022/8/velo.tn#Title">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/ilyes/ontologies/2022/8/velo.tn#Events"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/ilyes/ontologies/2022/8/velo.tn#Tour"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/ilyes/ontologies/2022/8/velo.tn#Adults -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ilyes/ontologies/2022/8/velo.tn#Adults">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ilyes/ontologies/2022/8/velo.tn#Marathon"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ilyes/ontologies/2022/8/velo.tn#Association -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ilyes/ontologies/2022/8/velo.tn#Association"/>
+    
+
+
+    <!-- http://www.semanticweb.org/ilyes/ontologies/2022/8/velo.tn#Bike -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ilyes/ontologies/2022/8/velo.tn#Bike">
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ilyes/ontologies/2022/8/velo.tn#BikeWithChildSeat -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ilyes/ontologies/2022/8/velo.tn#BikeWithChildSeat">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ilyes/ontologies/2022/8/velo.tn#Bike"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ilyes/ontologies/2022/8/velo.tn#CargoBike -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ilyes/ontologies/2022/8/velo.tn#CargoBike">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ilyes/ontologies/2022/8/velo.tn#Bike"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ilyes/ontologies/2022/8/velo.tn#ChildrenBike -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ilyes/ontologies/2022/8/velo.tn#ChildrenBike">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ilyes/ontologies/2022/8/velo.tn#Bike"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ilyes/ontologies/2022/8/velo.tn#Childrens -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ilyes/ontologies/2022/8/velo.tn#Childrens">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ilyes/ontologies/2022/8/velo.tn#Marathon"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ilyes/ontologies/2022/8/velo.tn#City -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ilyes/ontologies/2022/8/velo.tn#City">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ilyes/ontologies/2022/8/velo.tn#Tour"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ilyes/ontologies/2022/8/velo.tn#CityBike -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ilyes/ontologies/2022/8/velo.tn#CityBike">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ilyes/ontologies/2022/8/velo.tn#Bike"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ilyes/ontologies/2022/8/velo.tn#Desert -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ilyes/ontologies/2022/8/velo.tn#Desert">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ilyes/ontologies/2022/8/velo.tn#OffRoad"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ilyes/ontologies/2022/8/velo.tn#ElectricBike -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ilyes/ontologies/2022/8/velo.tn#ElectricBike">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ilyes/ontologies/2022/8/velo.tn#Bike"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ilyes/ontologies/2022/8/velo.tn#Events -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ilyes/ontologies/2022/8/velo.tn#Events">
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ilyes/ontologies/2022/8/velo.tn#Forest -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ilyes/ontologies/2022/8/velo.tn#Forest">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ilyes/ontologies/2022/8/velo.tn#OffRoad"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ilyes/ontologies/2022/8/velo.tn#Goverment -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ilyes/ontologies/2022/8/velo.tn#Goverment">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ilyes/ontologies/2022/8/velo.tn#Events"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ilyes/ontologies/2022/8/velo.tn#Long -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ilyes/ontologies/2022/8/velo.tn#Long">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ilyes/ontologies/2022/8/velo.tn#City"/>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ilyes/ontologies/2022/8/velo.tn#Village"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ilyes/ontologies/2022/8/velo.tn#Marathon -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ilyes/ontologies/2022/8/velo.tn#Marathon">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ilyes/ontologies/2022/8/velo.tn#Events"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ilyes/ontologies/2022/8/velo.tn#Medium -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ilyes/ontologies/2022/8/velo.tn#Medium">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ilyes/ontologies/2022/8/velo.tn#City"/>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ilyes/ontologies/2022/8/velo.tn#Village"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ilyes/ontologies/2022/8/velo.tn#Mixed -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ilyes/ontologies/2022/8/velo.tn#Mixed">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ilyes/ontologies/2022/8/velo.tn#Marathon"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ilyes/ontologies/2022/8/velo.tn#Mountain -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ilyes/ontologies/2022/8/velo.tn#Mountain">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ilyes/ontologies/2022/8/velo.tn#OffRoad"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ilyes/ontologies/2022/8/velo.tn#MountainBike -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ilyes/ontologies/2022/8/velo.tn#MountainBike">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ilyes/ontologies/2022/8/velo.tn#Bike"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ilyes/ontologies/2022/8/velo.tn#OffRoad -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ilyes/ontologies/2022/8/velo.tn#OffRoad">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ilyes/ontologies/2022/8/velo.tn#Tour"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ilyes/ontologies/2022/8/velo.tn#Private -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ilyes/ontologies/2022/8/velo.tn#Private">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ilyes/ontologies/2022/8/velo.tn#Events"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ilyes/ontologies/2022/8/velo.tn#Short -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ilyes/ontologies/2022/8/velo.tn#Short">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ilyes/ontologies/2022/8/velo.tn#City"/>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ilyes/ontologies/2022/8/velo.tn#Village"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ilyes/ontologies/2022/8/velo.tn#Snow -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ilyes/ontologies/2022/8/velo.tn#Snow">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ilyes/ontologies/2022/8/velo.tn#OffRoad"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ilyes/ontologies/2022/8/velo.tn#Tandem -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ilyes/ontologies/2022/8/velo.tn#Tandem">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ilyes/ontologies/2022/8/velo.tn#Bike"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ilyes/ontologies/2022/8/velo.tn#Tour -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ilyes/ontologies/2022/8/velo.tn#Tour"/>
+    
+
+
+    <!-- http://www.semanticweb.org/ilyes/ontologies/2022/8/velo.tn#Village -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ilyes/ontologies/2022/8/velo.tn#Village">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ilyes/ontologies/2022/8/velo.tn#Tour"/>
+    </owl:Class>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Individuals
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/ilyes/ontologies/2022/8/velo.tn#Esprit -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ilyes/ontologies/2022/8/velo.tn#Esprit">
+        <Address>ariana</Address>
+        <Email>esprit@gmail.tn</Email>
+        <Name>Esprit</Name>
+        <Phone rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">8565221</Phone>
+    </owl:NamedIndividual>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 4.5.9.2019-02-01T07:24:44Z) https://github.com/owlcs/owlapi -->
+
