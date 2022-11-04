@@ -224,6 +224,40 @@
     
 
 
+    <!-- http://www.semanticweb.org/ilyes/ontologies/2022/8/velo.tn#Type -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/ilyes/ontologies/2022/8/velo.tn#Type">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/ilyes/ontologies/2022/8/velo.tn#Adults"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/ilyes/ontologies/2022/8/velo.tn#Association"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/ilyes/ontologies/2022/8/velo.tn#Bike"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/ilyes/ontologies/2022/8/velo.tn#BikeWithChildSeat"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/ilyes/ontologies/2022/8/velo.tn#CargoBike"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/ilyes/ontologies/2022/8/velo.tn#ChildrenBike"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/ilyes/ontologies/2022/8/velo.tn#Childrens"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/ilyes/ontologies/2022/8/velo.tn#City"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/ilyes/ontologies/2022/8/velo.tn#CityBike"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/ilyes/ontologies/2022/8/velo.tn#Desert"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/ilyes/ontologies/2022/8/velo.tn#ElectricBike"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/ilyes/ontologies/2022/8/velo.tn#Events"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/ilyes/ontologies/2022/8/velo.tn#Forest"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/ilyes/ontologies/2022/8/velo.tn#Goverment"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/ilyes/ontologies/2022/8/velo.tn#Long"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/ilyes/ontologies/2022/8/velo.tn#Marathon"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/ilyes/ontologies/2022/8/velo.tn#Medium"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/ilyes/ontologies/2022/8/velo.tn#Mixed"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/ilyes/ontologies/2022/8/velo.tn#Mountain"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/ilyes/ontologies/2022/8/velo.tn#MountainBike"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/ilyes/ontologies/2022/8/velo.tn#OffRoad"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/ilyes/ontologies/2022/8/velo.tn#Private"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/ilyes/ontologies/2022/8/velo.tn#Short"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/ilyes/ontologies/2022/8/velo.tn#Snow"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/ilyes/ontologies/2022/8/velo.tn#Tandem"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/ilyes/ontologies/2022/8/velo.tn#Tour"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
     <!-- 
     ///////////////////////////////////////////////////////////////////////////////////////
     //
@@ -349,7 +383,6 @@
 
     <owl:Class rdf:about="http://www.semanticweb.org/ilyes/ontologies/2022/8/velo.tn#Long">
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ilyes/ontologies/2022/8/velo.tn#City"/>
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ilyes/ontologies/2022/8/velo.tn#Village"/>
     </owl:Class>
     
 
@@ -366,7 +399,6 @@
 
     <owl:Class rdf:about="http://www.semanticweb.org/ilyes/ontologies/2022/8/velo.tn#Medium">
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ilyes/ontologies/2022/8/velo.tn#City"/>
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ilyes/ontologies/2022/8/velo.tn#Village"/>
     </owl:Class>
     
 
@@ -415,7 +447,6 @@
 
     <owl:Class rdf:about="http://www.semanticweb.org/ilyes/ontologies/2022/8/velo.tn#Short">
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ilyes/ontologies/2022/8/velo.tn#City"/>
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ilyes/ontologies/2022/8/velo.tn#Village"/>
     </owl:Class>
     
 
@@ -442,14 +473,6 @@
     
 
 
-    <!-- http://www.semanticweb.org/ilyes/ontologies/2022/8/velo.tn#Village -->
-
-    <owl:Class rdf:about="http://www.semanticweb.org/ilyes/ontologies/2022/8/velo.tn#Village">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ilyes/ontologies/2022/8/velo.tn#Tour"/>
-    </owl:Class>
-    
-
-
     <!-- 
     ///////////////////////////////////////////////////////////////////////////////////////
     //
@@ -461,13 +484,519 @@
     
 
 
+    <!-- http://www.semanticweb.org/ilyes/ontologies/2022/8/velo.tn#AduldBikeMarathon -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ilyes/ontologies/2022/8/velo.tn#AduldBikeMarathon">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ilyes/ontologies/2022/8/velo.tn#Adults"/>
+        <Description>2022-06-05</Description>
+        <Description>marathon event for adults</Description>
+        <Location>Sfax</Location>
+        <StartDate>2022-06-03</StartDate>
+        <Title>Adult Bike Marathon</Title>
+        <Type>Adults</Type>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ilyes/ontologies/2022/8/velo.tn#AdultBikeMarathon2 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ilyes/ontologies/2022/8/velo.tn#AdultBikeMarathon2">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ilyes/ontologies/2022/8/velo.tn#Adults"/>
+        <Description>100km bike marathon for adults</Description>
+        <EndDate>2022-01-05</EndDate>
+        <Location>ariana</Location>
+        <StartDate>2022-01-05</StartDate>
+        <Title>Adult Bike Marathon 2</Title>
+        <Type>Adults</Type>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ilyes/ontologies/2022/8/velo.tn#ArianaRace -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ilyes/ontologies/2022/8/velo.tn#ArianaRace">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ilyes/ontologies/2022/8/velo.tn#Mixed"/>
+        <Description>100Km MountainRace in Mountain nahli</Description>
+        <EndDate>2022-02-02</EndDate>
+        <Location>ariana</Location>
+        <StartDate>2022-01-25</StartDate>
+        <Title>Ariana Race</Title>
+        <Type>Mixed</Type>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ilyes/ontologies/2022/8/velo.tn#BM -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ilyes/ontologies/2022/8/velo.tn#BM">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ilyes/ontologies/2022/8/velo.tn#MountainBike"/>
+        <Code>2343556</Code>
+        <Disponibility rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</Disponibility>
+        <Model rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">BMX</Model>
+        <PriceHour rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">100</PriceHour>
+        <Status>available</Status>
+        <Type>MountainBike</Type>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ilyes/ontologies/2022/8/velo.tn#Bike1 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ilyes/ontologies/2022/8/velo.tn#Bike1">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ilyes/ontologies/2022/8/velo.tn#ChildrenBike"/>
+        <Code>56767</Code>
+        <Disponibility rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</Disponibility>
+        <Model rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">ChildrenBike1</Model>
+        <PriceHour rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">10</PriceHour>
+        <Status>available</Status>
+        <Type>ChildrenBike</Type>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ilyes/ontologies/2022/8/velo.tn#BikeEvent -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ilyes/ontologies/2022/8/velo.tn#BikeEvent">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ilyes/ontologies/2022/8/velo.tn#Mixed"/>
+        <Description>Mixed bike marathon event for adults and childrens</Description>
+        <EndDate>2022-01-01</EndDate>
+        <Location>Mednine</Location>
+        <StartDate>2022-01-01</StartDate>
+        <Title>Bike Event</Title>
+        <Type>Mixed</Type>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ilyes/ontologies/2022/8/velo.tn#CargoBike1 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ilyes/ontologies/2022/8/velo.tn#CargoBike1">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ilyes/ontologies/2022/8/velo.tn#CargoBike"/>
+        <Code>54466</Code>
+        <Disponibility rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</Disponibility>
+        <Model rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">CargoBike1</Model>
+        <PriceHour rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">10</PriceHour>
+        <Status>available</Status>
+        <Type>CargoBike</Type>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ilyes/ontologies/2022/8/velo.tn#ChildBike -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ilyes/ontologies/2022/8/velo.tn#ChildBike">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ilyes/ontologies/2022/8/velo.tn#ChildrenBike"/>
+        <Code>4546556</Code>
+        <Disponibility rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</Disponibility>
+        <Model>ChildrenBike2</Model>
+        <PriceHour rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">7</PriceHour>
+        <Status>available</Status>
+        <Type>ChildrenBike</Type>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ilyes/ontologies/2022/8/velo.tn#ChildSeatBike -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ilyes/ontologies/2022/8/velo.tn#ChildSeatBike">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ilyes/ontologies/2022/8/velo.tn#BikeWithChildSeat"/>
+        <Code>43344545</Code>
+        <Disponibility rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</Disponibility>
+        <Model rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">ChildSeatBike1</Model>
+        <PriceHour rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">30</PriceHour>
+        <Status>available</Status>
+        <Type>BikeWithChildSeat</Type>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ilyes/ontologies/2022/8/velo.tn#ChildSeatBike2 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ilyes/ontologies/2022/8/velo.tn#ChildSeatBike2">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ilyes/ontologies/2022/8/velo.tn#BikeWithChildSeat"/>
+        <Code>4455</Code>
+        <Disponibility rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</Disponibility>
+        <Model rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">ChildSeatBike2</Model>
+        <PriceHour rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">27</PriceHour>
+        <Status>maintenace</Status>
+        <Type>BikeWithChildSeat</Type>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ilyes/ontologies/2022/8/velo.tn#ChildrenBikeMarathon -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ilyes/ontologies/2022/8/velo.tn#ChildrenBikeMarathon">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ilyes/ontologies/2022/8/velo.tn#Childrens"/>
+        <Description>short bike marathon event for childrens</Description>
+        <EndDate>2022-10-30</EndDate>
+        <Location>Sfax</Location>
+        <StartDate>2022-10-30</StartDate>
+        <Title>ChildMarathon</Title>
+        <Type>Childrens</Type>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ilyes/ontologies/2022/8/velo.tn#ChildrensEvent -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ilyes/ontologies/2022/8/velo.tn#ChildrensEvent">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ilyes/ontologies/2022/8/velo.tn#Childrens"/>
+        <Description>10 km bike marathon for childrens aged between 12 and 15 year</Description>
+        <EndDate>2022-09-09</EndDate>
+        <Location>Tunis</Location>
+        <StartDate>2022-09-09</StartDate>
+        <Title>Childrens Bike Event</Title>
+        <Type>Childrens</Type>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ilyes/ontologies/2022/8/velo.tn#CityTour -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ilyes/ontologies/2022/8/velo.tn#CityTour">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ilyes/ontologies/2022/8/velo.tn#Long"/>
+        <Date>2022-02-02</Date>
+        <Description>a wonderful tour in the city</Description>
+        <Duration>3 hours</Duration>
+        <Location>Djerba</Location>
+        <Title>City Tour</Title>
+        <Type>Long</Type>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ilyes/ontologies/2022/8/velo.tn#Decathlon -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ilyes/ontologies/2022/8/velo.tn#Decathlon">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ilyes/ontologies/2022/8/velo.tn#Association"/>
+        <Address>ariana</Address>
+        <Email>decathlon@gmail.tn</Email>
+        <Name>decathlon</Name>
+        <Phone rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2323252</Phone>
+        <Type>Association</Type>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ilyes/ontologies/2022/8/velo.tn#DelevryBike -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ilyes/ontologies/2022/8/velo.tn#DelevryBike">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ilyes/ontologies/2022/8/velo.tn#CargoBike"/>
+        <Code>34343434</Code>
+        <Disponibility rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</Disponibility>
+        <Model rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">DelevryBike</Model>
+        <PriceHour rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">20</PriceHour>
+        <Status>rented</Status>
+        <Type>CargoBike</Type>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ilyes/ontologies/2022/8/velo.tn#DesertBIkeRace -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ilyes/ontologies/2022/8/velo.tn#DesertBIkeRace">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ilyes/ontologies/2022/8/velo.tn#Desert"/>
+        <Date>2022-05-04</Date>
+        <Description>Offroad tour in mednine desert</Description>
+        <Duration rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">3</Duration>
+        <Location>Mednine</Location>
+        <Title>Desert Tour</Title>
+        <Type>Desert</Type>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ilyes/ontologies/2022/8/velo.tn#DesertTour -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ilyes/ontologies/2022/8/velo.tn#DesertTour">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ilyes/ontologies/2022/8/velo.tn#Desert"/>
+        <Date>2022-04-06</Date>
+        <Description>Desert bike tour in gabes</Description>
+        <Duration rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">3</Duration>
+        <Location>Gabes</Location>
+        <Title>Gabes Desert Tour</Title>
+        <Type>Desert</Type>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ilyes/ontologies/2022/8/velo.tn#ElectricBMW -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ilyes/ontologies/2022/8/velo.tn#ElectricBMW">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ilyes/ontologies/2022/8/velo.tn#ElectricBike"/>
+        <Code>343434</Code>
+        <Disponibility rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</Disponibility>
+        <Model>ElectricBMW</Model>
+        <PriceHour rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">30</PriceHour>
+        <Status>rented</Status>
+        <Type>ElectricBike</Type>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ilyes/ontologies/2022/8/velo.tn#ElectricPedal -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ilyes/ontologies/2022/8/velo.tn#ElectricPedal">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ilyes/ontologies/2022/8/velo.tn#ElectricBike"/>
+        <Code>433434</Code>
+        <Disponibility rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</Disponibility>
+        <Model>ElectricPedal</Model>
+        <PriceHour rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">35</PriceHour>
+        <Status>available</Status>
+        <Type>ElectricBike</Type>
+    </owl:NamedIndividual>
+    
+
+
     <!-- http://www.semanticweb.org/ilyes/ontologies/2022/8/velo.tn#Esprit -->
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ilyes/ontologies/2022/8/velo.tn#Esprit">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ilyes/ontologies/2022/8/velo.tn#Association"/>
         <Address>ariana</Address>
         <Email>esprit@gmail.tn</Email>
         <Name>Esprit</Name>
         <Phone rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">8565221</Phone>
+        <Type>Association</Type>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ilyes/ontologies/2022/8/velo.tn#Forest1 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ilyes/ontologies/2022/8/velo.tn#Forest1">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ilyes/ontologies/2022/8/velo.tn#Forest"/>
+        <Date>2023-01-01</Date>
+        <Description>Forest tour</Description>
+        <Duration rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2</Duration>
+        <Location>Tunis</Location>
+        <Title>Forest Tour</Title>
+        <Type>Forest</Type>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ilyes/ontologies/2022/8/velo.tn#Forest2 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ilyes/ontologies/2022/8/velo.tn#Forest2">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ilyes/ontologies/2022/8/velo.tn#Forest"/>
+        <Date>Date
+2022-03-03</Date>
+        <Description>Description</Description>
+        <Duration rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2</Duration>
+        <Location>Ariana</Location>
+        <Title>Ariana Forest Tour</Title>
+        <Type>Forest</Type>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ilyes/ontologies/2022/8/velo.tn#GovRace -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ilyes/ontologies/2022/8/velo.tn#GovRace">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ilyes/ontologies/2022/8/velo.tn#Goverment"/>
+        <Description>tunisian race</Description>
+        <EndDate>2022-07-09</EndDate>
+        <Location>Marsa</Location>
+        <StartDate>2022-07-07</StartDate>
+        <Title>Gov Race</Title>
+        <Type>Goverment</Type>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ilyes/ontologies/2022/8/velo.tn#LongBike -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ilyes/ontologies/2022/8/velo.tn#LongBike">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ilyes/ontologies/2022/8/velo.tn#Tandem"/>
+        <Code>45454545</Code>
+        <Disponibility rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</Disponibility>
+        <Model>LongBike</Model>
+        <PriceHour rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">15</PriceHour>
+        <Status>maintenance</Status>
+        <Type>Tandem</Type>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ilyes/ontologies/2022/8/velo.tn#LongTour -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ilyes/ontologies/2022/8/velo.tn#LongTour">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ilyes/ontologies/2022/8/velo.tn#Long"/>
+        <Date>2022-04-06</Date>
+        <Description>long city tour in beja</Description>
+        <Duration rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">5</Duration>
+        <Location>Beja</Location>
+        <Title>Long City Tour</Title>
+        <Type>Long</Type>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ilyes/ontologies/2022/8/velo.tn#Medium1 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ilyes/ontologies/2022/8/velo.tn#Medium1">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ilyes/ontologies/2022/8/velo.tn#Medium"/>
+        <Date>2022-05-05</Date>
+        <Description>medium city tour in nabeul</Description>
+        <Duration rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">3</Duration>
+        <Location>Nabeul</Location>
+        <Title>City Tour</Title>
+        <Type>Medium</Type>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ilyes/ontologies/2022/8/velo.tn#Medium2 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ilyes/ontologies/2022/8/velo.tn#Medium2">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ilyes/ontologies/2022/8/velo.tn#Medium"/>
+        <Date>2022-03-03</Date>
+        <Description>city tour in tunis</Description>
+        <Duration rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">3</Duration>
+        <Location>Tunis</Location>
+        <Title>Tunis City Tour</Title>
+        <Type>Medium</Type>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ilyes/ontologies/2022/8/velo.tn#Mountain1 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ilyes/ontologies/2022/8/velo.tn#Mountain1">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ilyes/ontologies/2022/8/velo.tn#Mountain"/>
+        <Date>2022-05-06</Date>
+        <Description>desc</Description>
+        <Duration rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2</Duration>
+        <Location>Beja</Location>
+        <Title>Mountain Tour</Title>
+        <Type>Mountain</Type>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ilyes/ontologies/2022/8/velo.tn#MountainVTT -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ilyes/ontologies/2022/8/velo.tn#MountainVTT">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ilyes/ontologies/2022/8/velo.tn#MountainBike"/>
+        <Code>343434</Code>
+        <Disponibility rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</Disponibility>
+        <Model>MountainVTT</Model>
+        <PriceHour rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">20</PriceHour>
+        <Status>available</Status>
+        <Type>MountainBike</Type>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ilyes/ontologies/2022/8/velo.tn#Pedal -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ilyes/ontologies/2022/8/velo.tn#Pedal">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ilyes/ontologies/2022/8/velo.tn#CityBike"/>
+        <Code>556732</Code>
+        <Disponibility rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</Disponibility>
+        <Model>Pedal</Model>
+        <PriceHour rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">5</PriceHour>
+        <Status>maintenance</Status>
+        <Type>CityBike</Type>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ilyes/ontologies/2022/8/velo.tn#PrivateEvent -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ilyes/ontologies/2022/8/velo.tn#PrivateEvent">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ilyes/ontologies/2022/8/velo.tn#Private"/>
+        <Description>Bike racing event By Decathlon</Description>
+        <EndDate>2022-12-10</EndDate>
+        <Location>ariana</Location>
+        <StartDate>2022-12-05</StartDate>
+        <Title>Decathlon Bike Racing</Title>
+        <Type>Private</Type>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ilyes/ontologies/2022/8/velo.tn#RedbullEvent -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ilyes/ontologies/2022/8/velo.tn#RedbullEvent">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ilyes/ontologies/2022/8/velo.tn#Private"/>
+        <Description>very long marathon</Description>
+        <EndDate>2022-05-30</EndDate>
+        <Location>jendouba</Location>
+        <StartDate>2022-05-05</StartDate>
+        <Title>Redbull Event</Title>
+        <Type>Private</Type>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ilyes/ontologies/2022/8/velo.tn#Short1 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ilyes/ontologies/2022/8/velo.tn#Short1">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ilyes/ontologies/2022/8/velo.tn#Short"/>
+        <Date>2022-06-05</Date>
+        <Description>short city tour in djerba</Description>
+        <Duration rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2</Duration>
+        <Location>Djerba</Location>
+        <Title>Short city tour</Title>
+        <Type>Short</Type>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ilyes/ontologies/2022/8/velo.tn#Short2 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ilyes/ontologies/2022/8/velo.tn#Short2">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ilyes/ontologies/2022/8/velo.tn#Short"/>
+        <Date>2022-05-05</Date>
+        <Description>short city tour in monastir</Description>
+        <Duration rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2</Duration>
+        <Location>Monastir</Location>
+        <Title>Monastir Tour</Title>
+        <Type>Short</Type>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ilyes/ontologies/2022/8/velo.tn#TandemBike -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ilyes/ontologies/2022/8/velo.tn#TandemBike">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ilyes/ontologies/2022/8/velo.tn#Tandem"/>
+        <Code>ju25525</Code>
+        <Disponibility rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</Disponibility>
+        <Model>TandemBike</Model>
+        <PriceHour rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">17</PriceHour>
+        <Status>rented</Status>
+        <Type>Tandem</Type>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ilyes/ontologies/2022/8/velo.tn#TunisRace -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ilyes/ontologies/2022/8/velo.tn#TunisRace">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ilyes/ontologies/2022/8/velo.tn#Goverment"/>
+        <Description>there is no description</Description>
+        <EndDate>2022-05-05</EndDate>
+        <Location>Tunis</Location>
+        <StartDate>2022-05-03</StartDate>
+        <Title>Tunis Race</Title>
+        <Type>Goverment</Type>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ilyes/ontologies/2022/8/velo.tn#VTT -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ilyes/ontologies/2022/8/velo.tn#VTT">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ilyes/ontologies/2022/8/velo.tn#CityBike"/>
+        <Code>567899</Code>
+        <Disponibility rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</Disponibility>
+        <Model>VTT</Model>
+        <PriceHour rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">70</PriceHour>
+        <Status>Maintenance</Status>
+        <Type>CityBike</Type>
     </owl:NamedIndividual>
 </rdf:RDF>
 
